@@ -26,19 +26,19 @@ function findBiggerBall(arrBalls){
     }
   } else if (sumG1 < sumG2){
     if (arrBalls[3] == arrBalls[4]){
-      return "Bole ke 6 lebih berat"
+      return "Bola ke 6 lebih berat"
     } else if (arrBalls[5] == arrBalls[4]){
-      return "Bole ke 4 lebih berat"
+      return "Bola ke 4 lebih berat"
     } else if (arrBalls[3] == arrBalls[5]){
-      return "Bole ke 5 lebih berat"
+      return "Bola ke 5 lebih berat"
     }
   } else if (sumG1 > sumG2){
     if (arrBalls[0] == arrBalls[1]){
-      return "Bole ke 3 lebih berat"
+      return "Bola ke 3 lebih berat"
     } else if (arrBalls[2] == arrBalls[1]){
-      return "Bole ke 1 lebih berat"
+      return "Bola ke 1 lebih berat"
     } else if (arrBalls[0] == arrBalls[2]){
-      return "Bole ke 2 lebih berat"
+      return "Bola ke 2 lebih berat"
     }
   }
 
@@ -47,9 +47,10 @@ function findBiggerBall(arrBalls){
 }
 
 
-/* testCase1 = [10,10,10,10,10,10,10,10,10] //invalid
-testCase2 = [10,10,10,10,10,10,10] //invalid
-testCase3 = [10,10,10,10,10,10,10,10] //invalid
+/* 
+testCase1 = [10,10,10,10,10,10,10,10,10] //invalid -> length array > 8
+testCase2 = [10,10,10,10,10,10,10] //invalid -> length array < 8
+testCase3 = [10,10,10,10,10,10,10,10] //invalid -> semua nilai sama
 testCase4 = [11,10,10,10,10,10,10,10]
 testCase5 = [10,11,10,10,10,10,10,10]
 testCase6 = [10,10,11,10,10,10,10,10]
@@ -58,7 +59,7 @@ testCase8 = [10,10,10,10,11,10,10,10]
 testCase9 = [10,10,10,10,10,11,10,10]
 testCase10 = [10,10,10,10,10,10,11,10]
 testCase11 = [10,10,10,10,10,10,10,11]
-testCase12 = [10,10,10,10,10,10,11,11] //invalid
+testCase12 = [10,10,10,10,10,10,11,11] //invalid -> array memiliki 2 nilai yang lebih besar dari 6 nilai yang lain
  */
 
 testCase1 = [10,10,10,10,10,10,10,10,10] //invalid
